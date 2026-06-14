@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Componentes</title>
+
+    <link rel="stylesheet" href="./styles.css" />
+
+    <!-- Importamos los componentes -->
+    <script type="module" src="./components/mi-card.js"></script>
+    <script type="module" src="./components/campo-numerico.js"></script>
+    <script type="module" src="./components/mi-switch.js"></script>
+    <script type="module" src="./components/horizontal-scroll.js"></script>
+</head>
+<body>
+    <h1>Tarea 6 - Componentes Web - Grupo 33</h1>
+
+    <section>
+        <h2>Cards reutilizadas</h2>
+        <div class="card-container">
+            <mi-card>
+                Card 1
+            </mi-card>
+
+            <mi-card class="custom-card">
+                Card 2 personalizada
+            </mi-card>
+
+            <mi-card class="small-card">
+                Card 3 pequeña
+            </mi-card>
+        </div>
+    </section>
+    <section>
+        <h2>Campo numérico</h2>
+
+        <campo-numerico value="0">
+            Number:
+        </campo-numerico>
+
+        <campo-numerico value="10" min="0" max="50" step="5">
+            Cantidad:
+        </campo-numerico>
+    </section>
+
+    <section>
+        <h2>Switch</h2>
+
+        <mi-switch>
+            <span slot="checked-message">On</span>
+            <span slot="unchecked-message">Off</span>
+            <span>Captions:</span>
+        </mi-switch>
+
+        <mi-switch checked>
+            <span slot="checked-message">Activo</span>
+            <span slot="unchecked-message">Inactivo</span>
+            <span>Estado:</span>
+        </mi-switch>
+    </section>
+
+    <section>
+        <h2>Horizontal scroll</h2>
+
+        <horizontal-scroll>
+            <mi-card>Card 1</mi-card>
+            <mi-card>Card 2</mi-card>
+            <mi-card>Card 3</mi-card>
+            <mi-card>Card 4</mi-card>
+            <mi-card>Card 5</mi-card>
+            <mi-card>Card 6</mi-card>
+            <mi-card>Card 7</mi-card>
+            <mi-card>Card 8</mi-card>
+            <mi-card>Card 9</mi-card>
+            <mi-card>Card 10</mi-card>
+            <mi-card>Card 11</mi-card>
+        </horizontal-scroll>
+    </section>
+</body>
+</html>

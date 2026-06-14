@@ -1,0 +1,26 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 32px;
+    background: #faefd5;
+    }
+
+section {
+    margin-bottom: 32px;
+}
+
+.card-container {
+    display: flex;
+    gap: 32px;
+}
+
+.custom-card {
+    --card-width: 150px;
+    --card-height: 100px;
+    --card-padding: 22px;
+}
+
+.small-card {
+    --card-width: 100px;
+    --card-height: 80px;
+    --card-padding: 8px;
+}
