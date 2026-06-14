@@ -12,6 +12,9 @@
     <script type="module" src="./components/campo-numerico.js"></script>
     <script type="module" src="./components/mi-switch.js"></script>
     <script type="module" src="./components/horizontal-scroll.js"></script>
+    <script type="module" src="./components/mi-slider.js"></script>
+    <script type="module" src="./components/mi-breadcrumb.js"></script>
+    <script type="module" src="./components/mi-accordion.js"></script>
 </head>
 <body>
     <h1>Tarea 6 - Componentes Web - Grupo 33</h1>
@@ -76,6 +79,74 @@
             <mi-card>Card 10</mi-card>
             <mi-card>Card 11</mi-card>
         </horizontal-scroll>
+    </section>
+    <section>
+        <h2>Slider</h2>
+
+        <mi-slider min="0" max="100" value="50" step="5" style="max-width: 300px;">
+            <mi-slider-label>0&#8451;</mi-slider-label>
+            <mi-slider-label position="25">25&#8451;</mi-slider-label>
+            <mi-slider-label position="50">50&#8451;</mi-slider-label>
+            <mi-slider-label position="75">75&#8451;</mi-slider-label>
+            <mi-slider-label position="100">100&#8451;</mi-slider-label>
+        </mi-slider>
+
+        <mi-slider min="0" max="10" value="3" step="1" style="max-width: 200px;">
+            <mi-slider-label>0</mi-slider-label>
+            <mi-slider-label position="50">5</mi-slider-label>
+            <mi-slider-label position="100">10</mi-slider-label>
+        </mi-slider>
+    </section>
+
+    <section>
+        <h2>Breadcrumb</h2>
+
+        <mi-breadcrumb>
+            <mi-breadcrumb-item href="#">Home</mi-breadcrumb-item>
+            <mi-breadcrumb-item href="#">Productos</mi-breadcrumb-item>
+            <mi-breadcrumb-item>Detalle</mi-breadcrumb-item>
+        </mi-breadcrumb>
+
+        <br /><br />
+
+        <mi-breadcrumb>
+            <mi-breadcrumb-item href="#">Inicio</mi-breadcrumb-item>
+            <mi-breadcrumb-item href="#">Configuración</mi-breadcrumb-item>
+            <mi-breadcrumb-item href="#">Cuenta</mi-breadcrumb-item>
+            <mi-breadcrumb-item>Perfil</mi-breadcrumb-item>
+        </mi-breadcrumb>
+    </section>
+
+    <section>
+        <h2>Acordión</h2>
+
+        <mi-accordion style="max-width: 350px;">
+            <mi-accordion-item>
+            <span slot="heading">Item 1</span>
+            <div>Panel uno — contenido aquí.</div>
+            </mi-accordion-item>
+            <mi-accordion-item>
+            <span slot="heading">Item 2</span>
+            <div>Panel dos — más contenido.</div>
+            </mi-accordion-item>
+            <mi-accordion-item>
+            <span slot="heading">Item 3</span>
+            <div>Panel tres — último panel.</div>
+            </mi-accordion-item>
+        </mi-accordion>
+
+        <br />
+
+        <mi-accordion style="max-width: 350px;">
+            <mi-accordion-item open>
+            <span slot="heading">¿Qué es un Web Component?</span>
+            <div>Son estándares del navegador para crear elementos HTML reutilizables y encapsulados.</div>
+            </mi-accordion-item>
+            <mi-accordion-item>
+            <span slot="heading">¿Qué es el Shadow DOM?</span>
+            <div>Un árbol DOM privado adjunto a un elemento, que encapsula sus estilos y estructura.</div>
+            </mi-accordion-item>
+        </mi-accordion>
     </section>
 </body>
 </html>
